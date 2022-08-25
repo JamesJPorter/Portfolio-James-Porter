@@ -13,6 +13,7 @@ body {
   min-height: 100%;
   line-height: 1;
   font-family: sans-serif;
+  max-width: 100vw;
 }
 
 h1,
@@ -104,16 +105,21 @@ nav a:hover {
   min-height: 100%
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 15% 85%;
-  margin-bottom: 2rem;
-  grid-gap: 1rem;
+main {
+  max-width: 100%;
 }
 
-.wrapper > h2 {
-  text-align: right;
-  padding: 1.5rem;
+.wrapper-bio {
+  display: grid;
+  grid-template-columns: 9% 89%;
+  margin: 2rem 0 2rem 0;
+  column-gap: 2%;
+  max-width: 100%;
+}
+
+.wrapper-bio > h2 {
+  text-align: center right;
+  padding-left: 1.5rem;
   border-right: solid black 3px;
 }
 
@@ -122,17 +128,81 @@ nav a:hover {
   padding: 1rem;
   color: var(--cream);
   line-height: 1.5rem;
+  height: 8rem;
+  max-width: 100%;
 }
 
-.content-container {
+.project-container {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 15% 85%;
-  grid-gap: 1rem;
+  grid-template-columns: 9% 89%;
+  grid-gap: 2%;
 }
 
-.content-container > h2 {
-  text-align: right;
-  padding: 1.5rem;
+.project-container > h2 {
+  text-align: center right;
+  padding-left: 1.5rem;
   border-right: solid black 3px;
+  grid-row: 1/3;
+}
+
+.featured-wrapper {
+  position: relative;
+}
+
+.featured-img {
+  max-width: 100%;
+}
+
+.title-feature {
+  max-width: 30%;
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  background-color: var(--old-burgundy);
+  color: var(--cream);
+  padding: 10px;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 44.5% 44.5%;
+  column-gap: 11%;
+  row-gap: 2%;
+  max-width: 100%;
+}
+
+.title-projects > h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 30%;
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  background-color: var(--old-burgundy);
+  color: var(--cream);
+  padding: 10px;
+}
+
+.title-projects > span {
+  line-height: 1.25rem;
+}
+
+.project-img {
+  max-height: auto;
+  max-width: 100%;
+}
+
+#What-ive-learned {
+  grid-column: 1/3;
+}
+
+.project-wrapper {
+  position: relative;
+}
+
+.contact-wrapper {
+  display:grid;
+  grid-template-columns: 9% 89%;
 }
