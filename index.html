@@ -1,50 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel-="stylesheet" href="assets/style.css">
-    <title>Portfolio - James Porter</title>
-</head>
-<body>
-    <header>
-        <div class="name"><h1>James Porter</h1></div>
-        <div class="nav">
-            <ul>
-                <li>About me</li>
-                <li>My Work</li>
-                <li>Contact Me</li>
-            </ul>
-        </div>
-        <div class="hero">
-            <img src="" alt="">
-        </div>
-    </header>
-    <main>
-        <section class="abt-me">
-            <div class="heading">
-                <h2>About Me</h2>
-            </div>
-            <div class="bio">
-                <span>A new Full Stack developer specializing in building my base of knowledge in order to create beautiful, efficient and flexible web applications. I have 12 years of work experience, 8 years of which is in team management, client relations, and project management. Managing complex projects with many moving parts has been incredibly useful while learning to code </span>
-            </div>
-        </section>
-        <section class="project-section">
-            <div class="heading">
-                <h2>My Work</h2>
-            </div>
-            <div class="projects-container">
-                <div class="projects">
-                    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <title>Portfolio - James Porter</title>
+    </head>
+
+    <body>
+
+        <!-- Title and Navbar + hero image-->
+
+        <header>
+            <h1><span id="port-style">Portfolio</span> - James Porter</h1>
+            <nav>
+                <ul>
+                    <li><a href="#About-Me">About me</a></li>
+                    <li><a href="#My-Work">My Work</a></li>
+                    <li><a href="#Contact-Me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main content: featured project and remaining projects -->
+
+        <main>
+
+            <section class="hero">
+                <img src="./assets/gradient.jpg" alt="color gradient image">
+            </section>
+
+            <!-- About Me section -->
+
+            <section class="abt-me" id="About-Me">
+                <div class="wrapper">
+                    <h2>About Me</h2>
+                    <div class="bio">
+                        <span>A new Full Stack developer specializing in building my base of knowledge in order to
+                            create
+                            beautiful, efficient and flexible web applications. I have 12 years of work experience, 8
+                            years
+                            of which is in team management, client relations, and project management. Managing complex
+                            projects with many moving parts has been incredibly useful while learning to code </span>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
-        <footer class="foot">
+            <!-- Projects, including the featured project -->
 
-        </footer>
-    </main>
-    
-</body>
+            <!-- overl project section container -->
+            <section class="project-section" id="My-Work">
+
+                <!-- heading for container  -->
+
+                <!-- <div class="heading">
+                    <h2>My Work</h2>
+                </div> -->
+
+                <!-- container for images with text boxes -->
+                <div class="content-container">
+
+                    <h2>My Work</h2>
+
+                    <!-- secction for featured project a.k.a. largest image -->
+                    <section class="project" id="featured">
+                        <div class="featured">
+                            <a><img src="./assets/deployed-screenshot.png"
+                                    alt="screenshot of refactored front end web app" class="featured-img"></a>
+                            <div class="title block">
+                                <h3>Efficient Horiseon - Refactor</h3>
+                                <span>A code refactor of a pre-existing application to create a more efficient and
+                                    readable
+                                    code base.</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- remainder of projects -->
+                    <section class="project">
+                        <div>
+                            <a><img src="./assets/CSS-Cheat-sheet.png" alt="CSS Cheat Sheet applicaton screenshot"
+                                    class="project-img"></a>
+                            <div class="title-block">
+                                <h3>CSS Cheat Sheet</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="project">
+                        <div>
+                            <a><img src="./assets/prework-study-guide.png"
+                                    alt="screenshot of deployed prework CSS, HTML and Javascript study guide"
+                                    class="project-img"></a>
+                            <div class="title-block">
+                                <h3>Prework Study Guide</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="project">
+                        <div>
+                            <a><img src="./assets/what-ive-learned.png" alt="" class="project-img"></a>
+                            <div class="title-block">
+                                <h3>What I've Learned HTML & CSS Notes</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Footer section containing contact info -->
+
+            <footer class="foot">
+                <div class="heading" id="Contact-Me">
+                    <h2>Contact Me</h2>
+                    <div class="content-container">
+                        <ul class="contact-info">
+                            <li>Email: <a href="porterjjames@gmail.com">PorterJJames@gmail.com</a></li>
+                            <li>Github: <a href="https://github.com/JamesJPorter">James Porter</a></li>
+                            <li>Phone: 661-810-5155</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+
 </html>

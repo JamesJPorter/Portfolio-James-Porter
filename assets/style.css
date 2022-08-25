@@ -1,51 +1,138 @@
+/* CSS Reset  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  body {
-    min-height: 100%;
-    line-height: 1;
-    font-family: sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 100%;
-  }
-  
-  input,
-  select,
-  option,
-  optgroup,
-  textarea,
-  button,
-  pre,
-  code {
-    font-size: 100%;
-    font-family: inherit;
-  }
-  
-  ol,
-  ul {
-    list-style: none;
-  }
-  
-  :root {
-    --sandy-brown: #fcaa67ff;
-    --medium-carmine: #b0413eff;
-    --cream: #ffffc7ff;
-    --steel-teal: #548687ff;
-    --old-burgundy: #473335ff;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+:root {
+  --sandy-brown: #fcaa67ff;
+  --medium-carmine: #b0413eff;
+  --cream: #ffffc7ff;
+  --steel-teal: #548687ff;
+  --old-burgundy: #473335ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  max-width: 100vw;
+  background-color: var(--steel-teal);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--old-burgundy);
+  padding: 0 0 0 2rem;
+}
+
+#port-style {
+  color: var(--cream);
+}
+
+nav {
+  padding: 0 2rem 0 0;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 1rem 0 1rem;
+}
+
+nav a:link {
+  color: var(--old-burgundy);
+}
+
+nav a:visited {
+  color: var(--old-burgundy);
+}
+
+nav a:hover {
+  color: var(--cream);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 30vh;
+}
+
+.hero > img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 2rem;
+  grid-gap: 1rem;
+}
+
+.wrapper > h2 {
+  text-align: right;
+  padding: 1.5rem;
+  border-right: solid black 3px;
+}
+
+.bio {
+  background-color: var(--old-burgundy);
+  padding: 1rem;
+  color: var(--cream);
+  line-height: 1.5rem;
+}
+
+.content-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-gap: 1rem;
+}
+
+.content-container > h2 {
+  text-align: right;
+  padding: 1.5rem;
+  border-right: solid black 3px;
+}
