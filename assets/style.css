@@ -139,6 +139,14 @@ main {
   grid-gap: 2%;
 }
 
+.project-wrapper:hover {
+  opacity: 0.5;
+}
+
+.featured-wrapper:hover {
+  opacity: 0.5;
+}
+
 .project-container > h2 {
   text-align: center right;
   padding-left: 1.5rem;
@@ -181,12 +189,17 @@ main {
   padding: 10px;
 }
 
+title.projects {
+  
+}
+
 .projects-wrapper {
   display: grid;
   grid-template-columns: 44.5% 44.5%;
   column-gap: 11%;
   row-gap: 2%;
   max-width: 100%;
+  position: relative;
 }
 
 .title-projects > h3 {
@@ -213,10 +226,6 @@ main {
 
 footer {
   display: block;
-}
-
-.project-wrapper {
-  position: relative;
 }
 
 .contact-wrapper {
